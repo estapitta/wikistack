@@ -1,20 +1,32 @@
 {
-  "name": "wikistack",
+  "name": "wikipedia-project",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/estapitta/wikistack.git"
+    "url": "git+https://github.com/Dejan992/wiki-project-jf.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/estapitta/wikistack/issues"
+    "url": "https://github.com/Dejan992/wiki-project-jf/issues"
   },
-  "homepage": "https://github.com/estapitta/wikistack#readme"
+  "homepage": "https://github.com/Dejan992/wiki-project-jf#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "html-template-tag": "^2.0.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
 }
