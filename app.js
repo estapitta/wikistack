@@ -14,9 +14,9 @@ app.use(morgan('dev'));
 app.use(staticMiddleware);
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-  res.send(`<h1>or maybe it is??</h1>`);
 
+app.get('/', (req, res) => {
+  res.redirect('/wiki');
 })
 app.use('/wiki', routerWiki);
 app.use('/user', routerUser);
